@@ -13,5 +13,5 @@ const getEnvVar = (key: string, defaultValue?: string): string => {
 export const ENV = {
     NODE_ENV: process.env.NODE_ENV || "development",
     PORT: getEnvVar("PORT", "3000"),
-    DB_URL: getEnvVar("DB_URL")
+    DB_URL: getEnvVar("DB_URL", "")
 };
